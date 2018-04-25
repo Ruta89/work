@@ -1,6 +1,6 @@
 {
-  "name": "Weather",
-  "short_name": "Weather",
+  "name": "Pogoda PWA",
+  "short_name": "Pogoda",
   "icons": [
     {
       "src": "images/icons/icon-128x128.png",
