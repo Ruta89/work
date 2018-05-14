@@ -1,0 +1,59 @@
+<mat-card>
+
+  <!-- <form class="example-container" [formGroup]="options"> -->
+  <!-- <div class="example-container"> -->
+
+
+
+  <mat-form-field>
+    <mat-select placeholder="WLL" [formControl]="wllControl" required>
+
+      <mat-option *ngFor="let wll of wllList" [value]="wll">
+        {{wll.name}}
+      </mat-option>
+      <mat-option>Inne</mat-option>
+    </mat-select>
+    <mat-error *ngIf="wllControl.hasError('required') ">Please choose an wll</mat-error>
+    <mat-hint>{{wllControl.value?.color}}</mat-hint>
+
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <input matInput [formControl]="l1Control" placeholder="L1" type="number">
+
+    <mat-error *ngIf="l1Control.hasError('required')">Wypelnij</mat-error>
+    <mat-hint>{{l1Control.value?.l1}}</mat-hint>
+
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [formControl]="aufControl" placeholder="auf" type="number">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [formControl]="sztControl" placeholder="szt" type="number">
+
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [formControl]="niciControl" placeholder="nici" type="number">
+
+
+
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [formControl]="czasControl" placeholder="czas" type="number">
+
+
+
+  </mat-form-field>
+
+
+  <!-- </form> -->
+
+  <!-- </div> -->
+
+
+  <button mat-raised-button (click)="zapisz()" color="primary">Zapisz</button>
+
+</mat-card>

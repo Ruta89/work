@@ -1,0 +1,20 @@
+mat-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container>* {
+  width: 80%;
+}
+
+button {
+  width: 80%;
+}
+
+mat-card {
+  border: 1px solid orange;
+}
+
+// mat-form-field.mat-form-field {
+//   font-size: 16px;
+// }
